@@ -3,43 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Skyline Construction Co</title>
+  <meta name="description" content="Skyline Construction Co offers land sales, documentation, water supply, and construction services in Ghana.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <nav>
   <div class="container nav-content">
-    <strong>Skyline Construction Co</strong>
-    <ul>
+    <div class="logo">
+      <img src="logo.png" alt="Skyline Logo">
+      Skyline Construction Co
+    </div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <ul id="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li class="dark-toggle" onclick="toggleDark()">🌙</li>
     </ul>
   </div>
 </nav>
 
 <header class="hero">
   <div class="container">
-    <h1>Trusted Land Development & Construction Services</h1>
-    <p>Land sales, documentation, utilities, and construction—handled professionally.</p>
-    <a href="services.html" class="btn btn-primary">View Services</a>
-    <a href="contact.html" class="btn btn-outline">Request a Quote</a>
+    <h1>Land Development & Construction</h1>
+    <p>From land acquisition to completed structures.</p>
+    <a href="services.html" class="btn btn-primary">Our Services</a>
+    <a href="contact.html" class="btn btn-outline">Contact Us</a>
   </div>
 </header>
 
 <section>
-  <div class="container">
-    <div class="section-title">
-      <h2>What We Do</h2>
-    </div>
-    <div class="grid grid-3">
-      <div class="card">Land Sales</div>
-      <div class="card">Indenture & Documentation</div>
-      <div class="card">Water Supply & Site Development</div>
-      <div class="card">Construction Services</div>
-    </div>
+  <div class="container grid grid-3">
+    <div class="card">🏡 Land Sales</div>
+    <div class="card">📜 Indenture & Documentation</div>
+    <div class="card">🚰 Water Supply & Construction</div>
   </div>
 </section>
 
@@ -47,6 +47,17 @@
   <p>📞 024 767 9518 | ✉️ bismarkans@gmail.com</p>
   <p>© 2030 Skyline Construction Co</p>
 </footer>
+
+<a href="https://wa.me/233247679518" class="whatsapp">💬</a>
+
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("show");
+}
+function toggleDark() {
+  document.body.classList.toggle("dark");
+}
+</script>
 
 </body>
 </html>
