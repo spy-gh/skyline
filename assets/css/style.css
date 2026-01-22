@@ -57,12 +57,13 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px; /* increased gap */
   font-weight: bold;
+  font-size: 1.6rem; /* larger company name */
 }
 
 .logo img {
-  height: 40px;
+  height: 60px; /* larger logo */
 }
 
 nav ul {
@@ -85,7 +86,20 @@ nav ul {
   text-align: center;
 }
 
-.hero h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+.hero h1 { 
+  font-size: 3.8rem; /* larger heading */
+  margin-bottom: 1.2rem; 
+}
+
+.hero p { 
+  font-size: 1.4rem; /* larger subtitle */
+  margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+  font-size: 1rem;
+  padding: 1rem 2rem; /* slightly bigger buttons */
+}
 
 /* BUTTONS */
 .btn {
@@ -161,7 +175,7 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #25d366; /* WhatsApp green, can be changed to match primary */
+  background: #25d366; /* WhatsApp green */
   color: white;
   padding: 15px;
   border-radius: 50%;
@@ -208,4 +222,9 @@ iframe {
   nav ul.show { display: flex; }
 
   .menu-btn { display: block; }
+
+  .logo img { height: 50px; } /* scale down for mobile */
+  .logo { font-size: 1.4rem; }
+  .hero h1 { font-size: 2.5rem; }
+  .hero p { font-size: 1.2rem; }
 }
