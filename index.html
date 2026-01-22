@@ -29,32 +29,34 @@
 </nav>
 
 <!-- HERO SECTION -->
-<header class="hero" style="background: url('assets/images/banner.jpg') center/cover no-repeat; position: relative;">
-  <!-- Overlay for readability -->
-  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:1;"></div>
-
-  <div class="container" style="position: relative; z-index: 2; color: white; text-align:center;">
-    <h1 style="font-size:4rem; margin-bottom:1rem;">Land Development & Construction</h1>
-    <p style="font-size:1.6rem; margin-bottom:2rem;">From land acquisition to completed structures.</p>
-    <a href="services.html" class="btn btn-primary">Our Services</a>
-    <a href="contact.html" class="btn btn-outline">Contact Us</a>
+<header class="hero" style="
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+              url('assets/images/banner.jpg') center/cover no-repeat;
+">
+  <div class="container hero-content">
+    <h1>Land Development & Construction</h1>
+    <p>From land acquisition to completed structures.</p>
+    <div class="hero-buttons">
+      <a href="services.html" class="btn btn-primary">Our Services</a>
+      <a href="contact.html" class="btn btn-outline">Contact Us</a>
+    </div>
   </div>
 </header>
 
-<!-- FEATURE CARDS -->
-<section>
-  <div class="container grid grid-3" style="margin-top:50px;">
+<!-- FEATURE CARDS SECTION -->
+<section class="features">
+  <div class="container grid grid-3">
     <div class="card">
       <h3>🏡 Land Sales</h3>
-      <p>All land sizes available with verified documentation for secure ownership.</p>
+      <p>We sell verified land plots of all sizes with proper documentation.</p>
     </div>
     <div class="card">
       <h3>📜 Indenture & Documentation</h3>
-      <p>Professional title deed and indenture services for legal security.</p>
+      <p>Legal land documentation, title deeds, and secure indentures for all transactions.</p>
     </div>
     <div class="card">
       <h3>🚰 Water Supply & Construction</h3>
-      <p>Complete water supply and construction solutions for residential and commercial projects.</p>
+      <p>Reliable water supply solutions and professional construction services.</p>
     </div>
   </div>
 </section>
@@ -68,14 +70,10 @@
 <!-- WHATSAPP FLOATING BUTTON -->
 <a href="https://wa.me/233247679518" class="whatsapp">💬</a>
 
-<!-- SCRIPT -->
+<!-- SCRIPTS -->
 <script>
-function toggleMenu() {
-  document.getElementById("menu").classList.toggle("show");
-}
-function toggleDark() {
-  document.body.classList.toggle("dark");
-}
+function toggleMenu() { document.getElementById("menu").classList.toggle("show"); }
+function toggleDark() { document.body.classList.toggle("dark"); }
 </script>
 
 </body>
