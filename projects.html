@@ -3,33 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>Projects | Skyline Construction Co</title>
+  <meta name="description" content="Skyline Construction Co projects - land development and construction works completed in Ghana.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <nav>
   <div class="container nav-content">
-    <strong>Skyline Construction Co</strong>
-    <ul>
+    <div class="logo">
+      <img src="logo.png" alt="Skyline Logo">
+      Skyline Construction Co
+    </div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <ul id="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li class="dark-toggle" onclick="toggleDark()">🌙</li>
     </ul>
   </div>
 </nav>
 
-<section class="hero">
+<header class="hero">
   <div class="container">
     <h1>Our Projects</h1>
-    <p>Land development and construction works completed.</p>
+    <p>Completed land development and construction works.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container section-title">
+    <h2>Project Gallery</h2>
+  </div>
+  <div class="gallery grid grid-3 container">
+    <img src="assets/images/project1.jpg" alt="Project 1">
+    <img src="assets/images/project2.jpg" alt="Project 2">
+    <img src="assets/images/project3.jpg" alt="Project 3">
+    <img src="assets/images/project4.jpg" alt="Project 4">
+    <img src="assets/images/project5.jpg" alt="Project 5">
   </div>
 </section>
 
 <footer>
+  <p>📞 024 767 9518 | ✉️ bismarkans@gmail.com</p>
   <p>© 2030 Skyline Construction Co</p>
 </footer>
+
+<a href="https://wa.me/233247679518" class="whatsapp">💬</a>
+
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("show");
+}
+function toggleDark() {
+  document.body.classList.toggle("dark");
+}
+</script>
 
 </body>
 </html>
