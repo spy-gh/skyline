@@ -9,51 +9,73 @@
 </head>
 <body>
 
+<!-- NAVIGATION -->
 <nav>
   <div class="container nav-content">
     <div class="logo">
-      <img src="logo.png" alt="Skyline Logo">
+      <img src="assets/images/logo.png" alt="Skyline Logo">
       Skyline Construction Co.
     </div>
     <div class="menu-btn" onclick="toggleMenu()">☰</div>
     <ul id="menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
       <li class="dark-toggle" onclick="toggleDark()">🌙</li>
     </ul>
   </div>
 </nav>
-<header class="hero" style="background: url('assets/images/banner.jpg') center/cover no-repeat;">
-  <div class="container">
-    <h1>Land Development & Construction</h1>
-    <p>From land acquisition to completed structures.</p>
+
+<!-- HERO SECTION -->
+<header class="hero" style="background: url('assets/images/banner.jpg') center/cover no-repeat; position: relative;">
+  <!-- Overlay for readability -->
+  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:1;"></div>
+
+  <div class="container" style="position: relative; z-index: 2; color: white; text-align:center;">
+    <h1 style="font-size:4rem; margin-bottom:1rem;">Land Development & Construction</h1>
+    <p style="font-size:1.6rem; margin-bottom:2rem;">From land acquisition to completed structures.</p>
     <a href="services.html" class="btn btn-primary">Our Services</a>
     <a href="contact.html" class="btn btn-outline">Contact Us</a>
   </div>
 </header>
 
-
+<!-- FEATURE CARDS -->
 <section>
-  <div class="container grid grid-3">
-    <div class="card">🏡 Land Sales</div>
-    <div class="card">📜 Indenture & Documentation</div>
-    <div class="card">🚰 Water Supply & Construction</div>
+  <div class="container grid grid-3" style="margin-top:50px;">
+    <div class="card">
+      <h3>🏡 Land Sales</h3>
+      <p>All land sizes available with verified documentation for secure ownership.</p>
+    </div>
+    <div class="card">
+      <h3>📜 Indenture & Documentation</h3>
+      <p>Professional title deed and indenture services for legal security.</p>
+    </div>
+    <div class="card">
+      <h3>🚰 Water Supply & Construction</h3>
+      <p>Complete water supply and construction solutions for residential and commercial projects.</p>
+    </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p style="text-align:center;">📞 +233 24 767 9518 | ✉️ construction@skyline.com | ✉️ skylinecons@gmail.com</p>
-  <p style="text-align:center;">© 2026 Skyline Construction Co</p>
+  <p style="text-align:center;">© 2030 Skyline Construction Co</p>
 </footer>
 
+<!-- WHATSAPP FLOATING BUTTON -->
 <a href="https://wa.me/233247679518" class="whatsapp">💬</a>
 
+<!-- SCRIPT -->
 <script>
-function toggleMenu() { document.getElementById("menu").classList.toggle("show"); }
-function toggleDark() { document.body.classList.toggle("dark"); }
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("show");
+}
+function toggleDark() {
+  document.body.classList.toggle("dark");
+}
 </script>
 
 </body>
