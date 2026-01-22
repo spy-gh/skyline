@@ -3,43 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <title>About | Skyline Construction Co</title>
+  <meta name="description" content="About Skyline Construction Co - trusted land development and construction services in Ghana.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <nav>
   <div class="container nav-content">
-    <strong>Skyline Construction Co</strong>
-    <ul>
+    <div class="logo">
+      <img src="logo.png" alt="Skyline Logo">
+      Skyline Construction Co
+    </div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <ul id="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li class="dark-toggle" onclick="toggleDark()">🌙</li>
     </ul>
   </div>
 </nav>
 
-<section class="hero">
+<header class="hero">
   <div class="container">
-    <h1>About Us</h1>
-    <p>Reliable land and construction solutions.</p>
+    <h1>About Skyline Construction Co</h1>
+    <p>Reliable land development and construction solutions.</p>
   </div>
-</section>
+</header>
 
 <section>
   <div class="container">
+    <h2>Who We Are</h2>
     <p>
       Skyline Construction Co provides professional land development and construction
       services, including land sales, documentation support, utilities, and building works.
       We prioritize transparency, quality, and client satisfaction.
     </p>
+
+    <h2>Our Values</h2>
+    <ul>
+      <li>✔ Integrity & transparency</li>
+      <li>✔ Quality workmanship</li>
+      <li>✔ Client satisfaction</li>
+      <li>✔ Long-term value</li>
+    </ul>
   </div>
 </section>
 
 <footer>
+  <p>📞 024 767 9518 | ✉️ bismarkans@gmail.com</p>
   <p>© 2030 Skyline Construction Co</p>
 </footer>
+
+<a href="https://wa.me/233247679518" class="whatsapp">💬</a>
+
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("show");
+}
+function toggleDark() {
+  document.body.classList.toggle("dark");
+}
+</script>
 
 </body>
 </html>
