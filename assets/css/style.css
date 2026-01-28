@@ -131,6 +131,13 @@ nav ul li a:hover {
 }
 
 /* =========================
+   INNER PAGES HERO (About, Services, Projects, Contact)
+========================= */
+.inner-page .hero {
+  padding: 140px 0 90px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+}
+/* =========================
    BUTTONS
 ========================= */
 .btn {
