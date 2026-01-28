@@ -131,12 +131,22 @@ nav ul li a:hover {
 }
 
 /* =========================
+   HOME PAGE HERO
+========================= */
+.home .hero {
+  /* Image + dark overlay */
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+              url('../assets/images/banner.jpg') center/cover no-repeat;
+}
+
+/* =========================
    INNER PAGES HERO (About, Services, Projects, Contact)
 ========================= */
 .inner-page .hero {
   padding: 140px 0 90px;
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
 }
+
 /* =========================
    BUTTONS
 ========================= */
