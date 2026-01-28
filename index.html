@@ -7,7 +7,9 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+
+<!-- IMPORTANT: home class added -->
+<body class="home">
 
 <!-- NAVIGATION -->
 <nav>
@@ -28,11 +30,8 @@
   </div>
 </nav>
 
-<!-- HERO SECTION -->
-<header class="hero" style="
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
-              url('assets/images/banner.jpg') center/cover no-repeat;
-">
+<!-- HERO SECTION (HOME STYLE FROM CSS) -->
+<header class="hero">
   <div class="container hero-content">
     <h1>Land Development & Construction</h1>
     <p>From land acquisition to completed structures.</p>
@@ -72,8 +71,13 @@
 
 <!-- SCRIPTS -->
 <script>
-function toggleMenu() { document.getElementById("menu").classList.toggle("show"); }
-function toggleDark() { document.body.classList.toggle("dark"); }
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("show");
+}
+
+function toggleDark() {
+  document.body.classList.toggle("dark");
+}
 </script>
 
 </body>
