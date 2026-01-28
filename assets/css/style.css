@@ -11,7 +11,7 @@
    COLOR VARIABLES
 ========================= */
 :root {
-  --primary: #1f8f5f;
+  --primary: #1f8f5f;        /* Professional green */
   --primary-light: #3ec27f;
   --bg: #ffffff;
   --text: #1a1a1a;
@@ -99,40 +99,20 @@ nav ul li a:hover {
 }
 
 /* =========================
-   HERO (BASE – SHARED)
+   HERO / BANNER
 ========================= */
 .hero {
+  padding: 140px 0 90px;
   color: white;
   text-align: center;
   position: relative;
-}
-
-/* =========================
-   HOME PAGE HERO (INDEX)
-========================= */
-.home .hero {
-  padding: 140px 0 90px;
+  /* Default fallback gradient if no image */
   background: linear-gradient(
-    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.2), 
     rgba(0,0,0,0.2)
   );
 }
 
-/* =========================
-   INNER PAGE HERO (ABOUT, SERVICES, ETC.)
-========================= */
-.inner-page .hero {
-  padding: 110px 0 70px;
-  background: linear-gradient(
-    135deg,
-    var(--primary),
-    var(--primary-light)
-  );
-}
-
-/* =========================
-   HERO TEXT
-========================= */
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
@@ -186,7 +166,7 @@ nav ul li a:hover {
    SECTIONS
 ========================= */
 section {
-  padding: 60px 0;
+  padding: 60px 0; /* reduced spacing */
 }
 
 /* =========================
@@ -206,7 +186,7 @@ section {
 ========================= */
 .card {
   background: var(--light);
-  padding: 1.5rem;
+  padding: 1.5rem; /* slightly less padding */
   border-radius: 12px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -238,6 +218,11 @@ section {
   transform: translateY(-6px);
 }
 
+/* Image Zoom */
+.project-image {
+  overflow: hidden;
+}
+
 .project-image img {
   width: 100%;
   height: 220px;
@@ -249,6 +234,7 @@ section {
   transform: scale(1.12);
 }
 
+/* Project Description */
 .project-info {
   padding: 1rem;
   text-align: center;
@@ -265,7 +251,7 @@ section {
 }
 
 /* =========================
-   FEATURES
+   FEATURES SECTION (HOMEPAGE)
 ========================= */
 .features .card h3 {
   margin-bottom: 0.8rem;
@@ -278,7 +264,7 @@ section {
 }
 
 /* =========================
-   GALLERY
+   GALLERY (GENERAL)
 ========================= */
 .gallery img {
   width: 100%;
@@ -316,7 +302,29 @@ footer {
 }
 
 /* =========================
-   MOBILE
+   DARK MODE TOGGLE
+========================= */
+.dark-toggle {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+.contact-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
 
